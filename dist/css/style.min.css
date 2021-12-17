@@ -1,0 +1,224 @@
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+.body-bg {
+  background-image: url("../img/fon-khaitek.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+.body-bg .cv {
+  margin-top: 50px;
+  border-radius: 20px;
+  border: 3px solid #4b4b4b;
+  box-shadow: 7px 7px 25px #ffffff;
+}
+@media (max-width: 575.98px) {
+  .body-bg .cv {
+    margin-top: 0;
+    border-radius: 0;
+  }
+  .body-bg .cv .foto-block img {
+    display: block;
+    max-width: 50%;
+    margin: 20px auto;
+  }
+}
+@media (max-width: 768px) {
+  .body-bg .cv {
+    border-radius: 0;
+  }
+}
+.body-bg .cv .cv-left {
+  background: #344443;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  min-height: 30vh;
+  color: #fff;
+}
+.body-bg .cv .cv-left a:hover {
+  text-decoration: none;
+}
+.body-bg .cv .cv-left ul {
+  line-height: 170%;
+  padding-left: 30px;
+}
+.body-bg .cv .cv-left .contacts-block {
+  list-style-type: none;
+  padding-left: 0px;
+}
+@media (max-width: 768px) {
+  .body-bg .cv .cv-left .contacts-block {
+    margin-top: 80px;
+  }
+}
+@media (max-width: 575.98px) {
+  .body-bg .cv .cv-left .contacts-block {
+    margin-top: 10px;
+  }
+}
+.body-bg .cv .cv-left .address {
+  font-style: italic;
+}
+@media (max-width: 991.98px) {
+  .body-bg .cv .cv-left ul {
+    line-height: 150%;
+    padding-left: 25px;
+  }
+}
+@media (max-width: 768px) {
+  .body-bg .cv .cv-left {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+}
+@media (max-width: 575.98px) {
+  .body-bg .cv .cv-left {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+}
+.body-bg .cv .cv-right {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(3px);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  min-height: 30vh;
+  color: #131313;
+}
+@media (max-width: 768px) {
+  .body-bg .cv .cv-right {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+@media (max-width: 575.98px) {
+  .body-bg .cv .cv-right {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+.body-bg .cv .cv-right article {
+  padding: 20px;
+}
+.body-bg .cv .cv-right .cv-heder,
+.body-bg .cv .cv-right .profile,
+.body-bg .cv .cv-right .experiense,
+.body-bg .cv .cv-right .compani-name {
+  font-family: "IBM Plex Serif", serif;
+}
+@media (max-width: 991.98px) {
+  .body-bg h1, .body-bg h2, .body-bg h3, .body-bg h3 {
+    font-size: 1.3rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "IBM Plex Serif", serif;
+}
+h1 .lines,
+h2 .lines,
+h3 .lines,
+h4 .lines,
+h5 .lines,
+h6 .lines {
+  overflow: hidden;
+}
+h1 .lines::before,
+h2 .lines::before,
+h3 .lines::before,
+h4 .lines::before,
+h5 .lines::before,
+h6 .lines::before {
+  margin-left: -100%;
+}
+h1 .lines::after,
+h2 .lines::after,
+h3 .lines::after,
+h4 .lines::after,
+h5 .lines::after,
+h6 .lines::after {
+  margin-right: -100%;
+}
+h1 .color-grey,
+h2 .color-grey,
+h3 .color-grey,
+h4 .color-grey,
+h5 .color-grey,
+h6 .color-grey {
+  color: #4b4b4b;
+}
+h1 .lines::before,
+h1 .lines::after,
+h2 .lines::before,
+h2 .lines::after,
+h3 .lines::before,
+h3 .lines::after,
+h4 .lines::before,
+h4 .lines::after,
+h5 .lines::before,
+h5 .lines::after,
+h6 .lines::before,
+h6 .lines::after {
+  content: "";
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 3px;
+  background: #4b4b4b;
+  border: 1px solid #fff;
+  vertical-align: middle;
+}
+h1 .job-title,
+h2 .job-title,
+h3 .job-title,
+h4 .job-title,
+h5 .job-title,
+h6 .job-title {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+h4 > i .company-name {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+h2 .job-title {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+h2 .lines {
+  overflow: hidden;
+}
+h2 .lines::before {
+  margin-left: -100%;
+}
+h2 .lines::after {
+  margin-right: -100%;
+}
+h2 .lines::before, h2 .lines::after {
+  content: "";
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 3px;
+  background: #4b4b4b;
+  border: 1px solid #fff;
+  vertical-align: middle;
+}
